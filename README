@@ -1,0 +1,12 @@
+Author names: Shreya Kamath,Mushahid Alam
+
+CS login : shreyakamath,mushahid
+
+description:
+*added an invalid page for page 0 -> this causes  null pointer deference to cause a segfault 
+
+*stack is at the end of the user space -> user can grow stack by allocating more than 4096 bytes. stack grows one page at a time 
+
+*added a guard page between stack and heap -> heap will not overwrite stack , stack will not overwrite heap
+
+
